@@ -38,6 +38,8 @@
  * SAVEPOINT  "포인트명2"; 
  * 
  * 
+ * 
+ * 
  * ROLLBACK TO "포인트명1"; -- 포인트 1 로 돌아감
  * 
  *  SAVEPOINT 지정 및 호출 시 이름에 ""(쌍따옴표) 붙여야함
@@ -46,6 +48,7 @@
 
 -- 새로운 데이터 INSERT
 SELECT * FROM DEPARTMENT2;
+
 
 INSERT INTO DEPARTMENT2 VALUES('T1', '개발 1팀', 'L2');
 INSERT INTO DEPARTMENT2 VALUES('T2', '개발 2팀', 'L2');

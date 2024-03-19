@@ -103,7 +103,7 @@ SELECT * FROM DEPT_COPY2;
 -- VIEW를 이용한 DML 구문이 원본에 영향을 미친다 !
 
 -- VIEW의 본래 목적인 보여지는 것 (조회) 라는 용도에 맞게 사용하는게 좋다
--- WIDTH READ ONLY 사용 -- 오직 읽기 전용으로만 만들고 DML 사용 금지하게 하는거
+-- WITH READ ONLY 사용 -- 오직 읽기 전용으로만 만들고 DML 사용 금지하게 하는거
 
 CREATE OR REPLACE VIEW V_DCOPY2
 AS

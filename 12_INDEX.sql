@@ -76,6 +76,19 @@ BEGIN
 END;
   -- < PL/SQL 사용이 끝낫다는 슬래쉬 구문
 
+BEGIN
+	
+	FOR I IN 1..1000000
+	LOOP
+		INSERT INTO 
+		
+	END LOOP
+	
+	
+END
+
+
+
 
 --샘플데이터 100만개 확인
 

@@ -116,9 +116,10 @@ CREATE TABLE TB_TEST(
 
 
 -- ROLE 권한 묶음
---> 묶어둔 ㅜ건한을 특정 계정에 부여
+--> 묶어둔 권한을 특정 계정에 부여
 
 GRANT RESOURCE, CONNECT TO sgh_sample;
+
 
 ----------------------------------------------------------------
 
@@ -147,6 +148,8 @@ GRANT SELECT ON EMPLOYEE TO sgh_sample;
 -- 3. sample 계정으로 돌아와서 다시 조회해보기
 
 SELECT * FROM kh_sgh.EMPLOYEE;
+
+
 
 
 --4 sample 계정에 부여한 EMPLOYEE 테이블 조회 권한 회수(REVOKE)

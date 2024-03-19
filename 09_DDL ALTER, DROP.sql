@@ -92,7 +92,7 @@ DROP COLUMN LNAME;
 --LNAME의 기본값을 'KOREA'로 수정
 
 ALTER TABLE DEPT_COPY
-MODIFY LNAME DEFAULT 'KOREA';
+MODIFY(LNAME DEFAULT 'KOREA');
 --기본값을 변경했다고 해서 기존 데이터가 변하지는 않음
 
 --LNAME '한국' -> 'KOREA'로 변경
@@ -208,6 +208,12 @@ DROP TABLE TB1 CASCADE CONSTRAINTS;
 -- 삭제 성공
 
 SELECT * FROM TB2;
+
+CREATE OR REPLACE VIEW
+AS
+SELECT EMP_ID, EMP_NAME
+FROM EMPLOYEE
+WITH READ ONLY;
 
 --------------------------------------------------------------------------------
 
