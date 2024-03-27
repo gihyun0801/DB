@@ -16,15 +16,15 @@ ALTER SESSION SET "_ORACLE_SCRIPT" = TRUE;
 
 -- 사용자 계정 생성
 
-CREATE USER board_project IDENTIFIED BY board1234;
+CREATE USER post_project IDENTIFIED BY post_project;
 
 -- 사용자 한테 권한을 부여해보겠다
-GRANT RESOURCE, CONNECT TO board_project;
+GRANT RESOURCE, CONNECT TO post_project;
 --데이터 베이스를 관리하는데 필요한권한을 준다 RESOURCE : 데이터베이스의 집합체라고 보면된다
 
 
 --객체가 생성될 수 있는 공간 할당량 지정
-ALTER USER board_project DEFAULT TABLESPACE SYSTEM QUOTA UNLIMITED ON SYSTEM;
+ALTER USER post_project DEFAULT TABLESPACE SYSTEM QUOTA UNLIMITED ON SYSTEM;
 
 
 

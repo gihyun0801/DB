@@ -56,6 +56,9 @@ COMMIT;
 -- 왜 여기선 DEFALUT 값이 없냐 이유는 EMPLOYEE 를 복사하엿지만 그 조건들까진 복사를 안했기
 --떄문에 디폴트값엔 아무것도 없는 상태이다. 그래서 NULL 이 뜨는 것이다
 
+SELECT STUDENT_NO, STUDENT_NAME, DEPARTMENT_NAME , STUDENT_ADDRESS FROM TB_STUDENT
+JOIN TB_DEPARTMENT USING(DEPARTMENT_NO)
+WHERE DEPARTMENT_NAME = '건축공학과';
 
 ---------------------------------------------------------------------------
 
